@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KD Administrator\\Desktop\\KDU_Dotnet\\Session01\\1\\1.csproj",
+      "projectUniqueName": "C:\\Users\\KD Administrator\\Desktop\\KDU_Dotnet\\Session01\\ques.1\\1.csproj",
       "projectName": "1",
-      "projectPath": "C:\\Users\\KD Administrator\\Desktop\\KDU_Dotnet\\Session01\\1\\1.csproj",
+      "projectPath": "C:\\Users\\KD Administrator\\Desktop\\KDU_Dotnet\\Session01\\ques.1\\1.csproj",
       "packagesPath": "C:\\Users\\KD Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KD Administrator\\Desktop\\KDU_Dotnet\\Session01\\1\\obj\\",
+      "outputPath": "C:\\Users\\KD Administrator\\Desktop\\KDU_Dotnet\\Session01\\ques.1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KD Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
