@@ -11,6 +11,7 @@ Console.WriteLine("Series1:");
 int a0=1 ,
     a1=2,
     a2=1;
+    Console.Write("1 ");
 for(int i=1; i<=n ;i++){
     int ans= a0+a1+a2;
     a0=a1;
@@ -21,10 +22,12 @@ for(int i=1; i<=n ;i++){
     Console.WriteLine();
 
 
-//Series : 2     --  1 4 9 16....
+//Series : 2     --  1 4 9 25 36....
 
 Console.WriteLine("Series2:");
 for(int i=1; i<=n ;i++){
+    if(i%4==0)
+        continue;
     int ans= i*i;;
     Console.Write(ans+" ");
 }
