@@ -1,0 +1,15 @@
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\xmlSerialize.csproj.AssemblyReference.cache
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\xmlSerialize.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\xmlSerialize.AssemblyInfoInputs.cache
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\xmlSerialize.AssemblyInfo.cs
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\xmlSerialize.csproj.CoreCompileInputs.cache
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\bin\Debug\net6.0\xmlSerialize.exe
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\bin\Debug\net6.0\xmlSerialize.deps.json
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\bin\Debug\net6.0\xmlSerialize.runtimeconfig.json
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\bin\Debug\net6.0\xmlSerialize.dll
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\bin\Debug\net6.0\xmlSerialize.pdb
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\xmlSerialize.dll
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\refint\xmlSerialize.dll
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\xmlSerialize.pdb
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\xmlSerialize.genruntimeconfig.cache
+C:\Users\KD Administrator\Desktop\KDU_Dotnet\Session02\xmlSerialize\obj\Debug\net6.0\ref\xmlSerialize.dll
