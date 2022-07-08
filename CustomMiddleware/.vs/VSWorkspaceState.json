@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CustomMiddleware",
+    "\\CustomMiddleware\\Views",
+    "\\CustomMiddleware\\Views\\Home"
+  ],
+  "SelectedNode": "\\CustomMiddleware\\Views\\Home\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}
