@@ -1,0 +1,11 @@
+C:\Users\KD Administrator\source\repos\AdoNetEx\obj\Debug\AdoNetEx.csproj.AssemblyReference.cache
+C:\Users\KD Administrator\source\repos\AdoNetEx\obj\Debug\AdoNetEx.csproj.SuggestedBindingRedirects.cache
+C:\Users\KD Administrator\source\repos\AdoNetEx\obj\Debug\AdoNetEx.csproj.CoreCompileInputs.cache
+C:\Users\KD Administrator\source\repos\AdoNetEx\bin\Debug\AdoNetEx.exe.config
+C:\Users\KD Administrator\source\repos\AdoNetEx\bin\Debug\AdoNetEx.exe
+C:\Users\KD Administrator\source\repos\AdoNetEx\bin\Debug\AdoNetEx.pdb
+C:\Users\KD Administrator\source\repos\AdoNetEx\obj\Debug\AdoNetEx.exe
+C:\Users\KD Administrator\source\repos\AdoNetEx\obj\Debug\AdoNetEx.pdb
+C:\Users\KD Administrator\Source\Repos\priyanshi2203\KDU_Dotnet\HomeWork4-AdoNet\AdoNetEx\obj\Debug\AdoNetEx.csproj.AssemblyReference.cache
+C:\Users\KD Administrator\Source\Repos\priyanshi2203\KDU_Dotnet\HomeWork4-AdoNet\AdoNetEx\obj\Debug\AdoNetEx.csproj.SuggestedBindingRedirects.cache
+C:\Users\KD Administrator\Source\Repos\priyanshi2203\KDU_Dotnet\HomeWork4-AdoNet\AdoNetEx\obj\Debug\AdoNetEx.csproj.CoreCompileInputs.cache
