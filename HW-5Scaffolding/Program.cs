@@ -39,8 +39,15 @@ namespace HW_5Scaffolding
 
             // Query-2 Give the name of employess with maximum number of sales
 
+            //Tried doing it but getting some errors.
+            /*var query2 = dbContext.Employees.Include(a => a.Orders);
 
-            var query2 = dbContext.Employees.Include(a => a.Orders);
+
+             var q2 = dbContext.Orders.Include(x => x.OrderDetails).Include(x => x.Employee)
+                .Select(x => x.OrderByDescending(
+                    y => (y.Employee.Quantity) * (y.Orders.Count()
+                    ).toList();
+            */
 
 
             //Query-3  Give a list of product name and the nam eof country they are shipped to
@@ -70,7 +77,7 @@ namespace HW_5Scaffolding
             foreach (var x in query4)
             {
                 Console.WriteLine(x.productId + " " + x.tQuantity + " " + x.moneyEarned);
-
+               }
 
                 Console.ReadLine();
 
