@@ -1,0 +1,5 @@
+C:\Users\KD Administrator\source\repos\CryptoCurrency_Assignment2\obj\Debug\net6.0\CryptoCurrency_Assignment2.csproj.AssemblyReference.cache
+C:\Users\KD Administrator\source\repos\CryptoCurrency_Assignment2\obj\Debug\net6.0\CryptoCurrency_Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KD Administrator\source\repos\CryptoCurrency_Assignment2\obj\Debug\net6.0\CryptoCurrency_Assignment2.AssemblyInfoInputs.cache
+C:\Users\KD Administrator\source\repos\CryptoCurrency_Assignment2\obj\Debug\net6.0\CryptoCurrency_Assignment2.AssemblyInfo.cs
+C:\Users\KD Administrator\source\repos\CryptoCurrency_Assignment2\obj\Debug\net6.0\CryptoCurrency_Assignment2.csproj.CoreCompileInputs.cache

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\DataReaderFromCSV",
+    "\\JsonFiles",
+    "\\Models",
+    "\\Services"
+  ],
+  "SelectedNode": "\\Services\\UpdatePrice.cs",
+  "PreviewInSolutionExplorer": false
+}
