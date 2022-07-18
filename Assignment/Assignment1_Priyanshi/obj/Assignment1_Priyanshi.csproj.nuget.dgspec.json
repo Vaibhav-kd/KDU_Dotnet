@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KD Administrator\\source\\repos\\Assignment1_Priyanshi\\Assignment1_Priyanshi.csproj": {}
+    "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment\\Assignment1_Priyanshi\\Assignment1_Priyanshi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KD Administrator\\source\\repos\\Assignment1_Priyanshi\\Assignment1_Priyanshi.csproj": {
+    "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment\\Assignment1_Priyanshi\\Assignment1_Priyanshi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KD Administrator\\source\\repos\\Assignment1_Priyanshi\\Assignment1_Priyanshi.csproj",
+        "projectUniqueName": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment\\Assignment1_Priyanshi\\Assignment1_Priyanshi.csproj",
         "projectName": "Assignment1_Priyanshi",
-        "projectPath": "C:\\Users\\KD Administrator\\source\\repos\\Assignment1_Priyanshi\\Assignment1_Priyanshi.csproj",
+        "projectPath": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment\\Assignment1_Priyanshi\\Assignment1_Priyanshi.csproj",
         "packagesPath": "C:\\Users\\KD Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KD Administrator\\source\\repos\\Assignment1_Priyanshi\\obj\\",
+        "outputPath": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment\\Assignment1_Priyanshi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KD Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
