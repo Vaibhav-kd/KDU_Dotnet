@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PjkQz/szxezCaljScCNqyK2P4p70EoAiMXzc3seXywJKBp3gRwXm8wMF885Bm40HBXRK8hOSwK8mhse+s0XsNw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\KD Administrator\\source\\repos\\Assignment2_newAttempt\\Assignment2_newAttempt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KD Administrator\\.nuget\\packages\\csvhelper\\28.0.1\\csvhelper.28.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
