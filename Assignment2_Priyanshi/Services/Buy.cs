@@ -7,34 +7,44 @@ using System.Threading.Tasks;
 
 namespace Assignment2_newAttempt.Services
 {
-     public class Buy
+    public class Buy
     {
-        
-        
-        public List<Trader> updateTraderData_AfterBuying(string walletAddress , string coinName, int quantity,double price,List<Trader> traderRecords)
+
+
+        public List<Trader> updateTraderData_AfterBuying(string walletAddress, string coinName, int quantity, double price, List<Trader> traderRecords)
         {
-            
 
-            foreach (var i in traderRecords) {
-                i.balanceAfterBuying += quantity * price;
-               // Console.WriteLine(i.balanceAfterBuying);
+            Hash_Function hf = new Hash_Function();
+            Thread backgroundThread = new Thread(() =>
+             {
+                 hf.GetBlockHash();
+             });
+             backgroundThread.IsBackground = true;
+             backgroundThread.Start();
+
+
+
+            foreach (var i in traderRecords)
+            {
                 
-               if (i.balanceAfterBuying > i.balanceAfterSelling)
-                {
-                    i.profit_or_loss_value = (i.balanceAfterSelling - i.balanceAfterBuying);
-                    i.profit_or_loss_status = "Loss";
-                }
-                else
-                {
-                    i.profit_or_loss_value = (-i.balanceAfterSelling + i.balanceAfterBuying);
-                    i.profit_or_loss_status = "Profit";
-                }
-
                 if (i.walletAddress == walletAddress)
                 {
-               
+                    i.balanceAfterBuying += quantity * price;
+                   
+                    if (i.balanceAfterBuying > i.balanceAfterSelling)
+                    {
+                        i.profit_or_loss_value = (-i.balanceAfterSelling + i.balanceAfterBuying);
+                        i.profit_or_loss_status = "Loss";
+                    }
+                    else
+                    {
+                        i.profit_or_loss_value = (i.balanceAfterSelling - i.balanceAfterBuying);
+                        i.profit_or_loss_status = "Profit";
+                    }
+
                     if (!(i.traders_account is null))
                     {
+
                         if (i.traders_account.Where(c => c.CoinName == coinName).Count() == 0)
                         {
                             //add
@@ -42,7 +52,7 @@ namespace Assignment2_newAttempt.Services
                             {
                                 CoinName = coinName,
                                 Quantity = quantity,
-                                Price = price  
+                                Price = price
                             });
                         }
                         else
@@ -54,6 +64,7 @@ namespace Assignment2_newAttempt.Services
                             }
 
                         }
+
                     }
                     else
                     {
@@ -64,18 +75,21 @@ namespace Assignment2_newAttempt.Services
                             Price = price
                         });
                     }
+
+
+
                 }
             }
             return traderRecords;
         }
-         
-        public List<Coin> updateCoinsData_AfterBuying(string coinName, long quantity, List<Coin>coinRecords)
+
+        public List<Coin> updateCoinsData_AfterBuying(string coinName, long quantity, List<Coin> coinRecords)
         {
-            foreach(var i in coinRecords)
-           {
-               if (i.Name == coinName)
-                   i.Circulating_Supply += quantity;
-           }
+            foreach (var i in coinRecords)
+            {
+                if (i.Name == coinName)
+                    i.Circulating_Supply += quantity;
+            }
             return coinRecords;
         }
     }

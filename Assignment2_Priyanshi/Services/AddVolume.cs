@@ -11,6 +11,14 @@ namespace Assignment2_newAttempt.Services
     {
         public List<Coin> addVolumeInCoinsData(string coinName, long quantity, List<Coin> coinRecords)
         {
+            Hash_Function hf = new Hash_Function();
+            Thread backgroundThread = new Thread(() =>
+            {
+                hf.GetBlockHash();
+            });
+            backgroundThread.IsBackground = true;
+            backgroundThread.Start();
+
             foreach (var i in coinRecords)
             {
                 if (i.Name == coinName)
