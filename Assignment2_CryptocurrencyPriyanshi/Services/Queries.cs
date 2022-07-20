@@ -9,7 +9,7 @@ namespace Assignment2_newAttempt.Services
 {
     public class Queries
     {
-
+        //Queries for fetching required data asked by user through menu .
 
         public void CoinDetails_1(string coinName, List<Coin> coinRecords)
         {

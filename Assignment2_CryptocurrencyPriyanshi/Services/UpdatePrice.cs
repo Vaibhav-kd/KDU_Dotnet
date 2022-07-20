@@ -11,6 +11,7 @@ namespace Assignment2_newAttempt.Services
     {
         public List<Coin> updateCoinPrice(string coinName, double price, List<Coin> coinRecords)
         {
+            // Threading for running Hash function in background and not slowing other processes.
             Hash_Function hf = new Hash_Function();
             Thread backgroundThread = new Thread(() =>
             {

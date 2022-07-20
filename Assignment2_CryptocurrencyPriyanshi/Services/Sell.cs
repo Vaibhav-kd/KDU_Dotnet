@@ -12,6 +12,7 @@ namespace Assignment2_newAttempt.Services
 
         public List<Trader> updateTraderData_AfterSelling(string walletAddress, string coinName, int quantity, double price, List<Trader> traderRecords)
         {
+            // Threading for running Hash function in background and not slowing other processes.
             Hash_Function hf = new Hash_Function();
             Thread backgroundThread = new Thread(() =>
             {

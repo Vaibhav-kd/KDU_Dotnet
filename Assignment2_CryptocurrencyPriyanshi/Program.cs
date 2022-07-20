@@ -68,6 +68,7 @@ namespace Assignment2_newAttempt
 
 
             // Reading type of transaction from transactionJsonList file and then for each transaction type called that particular function.
+            //A thread for reading each transaction in transactionJsonList
 
             ThreadStart buy_thread = new ThreadStart(() =>
             {
@@ -84,6 +85,7 @@ namespace Assignment2_newAttempt
                         {
                             if (a.Symbol == i.data.coin)
                             {
+                                //Thread for calling Buy transaction function .
 
                                 ThreadStart buy_thread = new ThreadStart(() =>
                                 {
@@ -103,6 +105,9 @@ namespace Assignment2_newAttempt
                         {
                             if (a.Symbol == i.data.coin)
                             {
+
+                                //Thread for calling Sell transaction function .
+
                                 ThreadStart sell_thread = new ThreadStart(() =>
                                 {
                                     traderRecords = s.updateTraderData_AfterSelling(i.data.wallet_address, i.data.coin, i.data.quantity, a.Price, traderRecords);
@@ -119,6 +124,9 @@ namespace Assignment2_newAttempt
                     if (type_of_transaction == "ADD_VOLUME")
                     {
                         AddVolume av = new AddVolume();
+
+                        //Thread for calling Add_Volume transaction function .
+
                         ThreadStart addVolume_thread = new ThreadStart(() =>
                         {
                             av.addVolumeInCoinsData(i.data.coin, i.data.quantity, coinRecords);
@@ -131,6 +139,9 @@ namespace Assignment2_newAttempt
                     if (type_of_transaction == "UPDATE_PRICE")
                     {
                         UpdatePrice up = new UpdatePrice();
+
+                        //Thread for calling Update_Price transaction function .
+
                         ThreadStart updatePrice_thread = new ThreadStart(() =>
                         {
                             up.updateCoinPrice(i.data.coin, i.data.price, coinRecords);
