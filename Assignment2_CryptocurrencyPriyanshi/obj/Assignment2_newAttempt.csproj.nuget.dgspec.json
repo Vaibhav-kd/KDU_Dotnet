@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KD Administrator\\source\\repos\\Assignment2_newAttempt\\Assignment2_newAttempt.csproj": {}
+    "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment2_CryptocurrencyPriyanshi\\Assignment2_newAttempt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KD Administrator\\source\\repos\\Assignment2_newAttempt\\Assignment2_newAttempt.csproj": {
+    "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment2_CryptocurrencyPriyanshi\\Assignment2_newAttempt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KD Administrator\\source\\repos\\Assignment2_newAttempt\\Assignment2_newAttempt.csproj",
+        "projectUniqueName": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment2_CryptocurrencyPriyanshi\\Assignment2_newAttempt.csproj",
         "projectName": "Assignment2_newAttempt",
-        "projectPath": "C:\\Users\\KD Administrator\\source\\repos\\Assignment2_newAttempt\\Assignment2_newAttempt.csproj",
+        "projectPath": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment2_CryptocurrencyPriyanshi\\Assignment2_newAttempt.csproj",
         "packagesPath": "C:\\Users\\KD Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KD Administrator\\source\\repos\\Assignment2_newAttempt\\obj\\",
+        "outputPath": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment2_CryptocurrencyPriyanshi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KD Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

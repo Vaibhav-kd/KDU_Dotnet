@@ -70,7 +70,7 @@ namespace Assignment2_newAttempt
             // Reading type of transaction from transactionJsonList file and then for each transaction type called that particular function.
             //A thread for reading each transaction in transactionJsonList
 
-            ThreadStart buy_thread = new ThreadStart(() =>
+            ThreadStart transaction_thread = new ThreadStart(() =>
             {
                 foreach (var i in transactionJsonlist)
                 {
@@ -152,7 +152,7 @@ namespace Assignment2_newAttempt
                 }
 
             });
-            Thread thread1 = new Thread(buy_thread);
+            Thread thread1 = new Thread(transaction_thread);
             thread1.Start();
 
             //Calling Menu function . 

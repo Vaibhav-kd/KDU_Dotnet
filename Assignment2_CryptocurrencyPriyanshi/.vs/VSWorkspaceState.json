@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\JsonReader",
-    "\\Models"
+    "\\Models",
+    "\\Services"
   ],
-  "SelectedNode": "\\Assignment2_newAttempt.sln",
   "PreviewInSolutionExplorer": false
 }

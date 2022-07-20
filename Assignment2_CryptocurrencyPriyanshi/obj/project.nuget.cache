@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PjkQz/szxezCaljScCNqyK2P4p70EoAiMXzc3seXywJKBp3gRwXm8wMF885Bm40HBXRK8hOSwK8mhse+s0XsNw==",
+  "dgSpecHash": "/yUpSgMx4gSnulnENsDo9yUcG85tw3I5aSf3XMXnd7lPzbK4F4pApgtDKFkCUXREyXEoYQOspiTcUKg1xtthuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KD Administrator\\source\\repos\\Assignment2_newAttempt\\Assignment2_newAttempt.csproj",
+  "projectFilePath": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\Assignment2_CryptocurrencyPriyanshi\\Assignment2_newAttempt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KD Administrator\\.nuget\\packages\\csvhelper\\28.0.1\\csvhelper.28.0.1.nupkg.sha512"
   ],
