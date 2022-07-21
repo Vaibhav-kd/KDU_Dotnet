@@ -90,7 +90,7 @@ namespace Assignment2_newAttempt
                                 ThreadStart buy_thread = new ThreadStart(() =>
                                 {
                                     traderRecords = b.updateTraderData_AfterBuying(i.data.wallet_address, i.data.coin, i.data.quantity, a.Price, traderRecords);
-
+                                    b.updateCoinsData_AfterBuying(i.data.coin, i.data.quantity, coinRecords);
                                 });
                                 Thread thread1 = new Thread(buy_thread);
                                 thread1.Start();
@@ -111,7 +111,7 @@ namespace Assignment2_newAttempt
                                 ThreadStart sell_thread = new ThreadStart(() =>
                                 {
                                     traderRecords = s.updateTraderData_AfterSelling(i.data.wallet_address, i.data.coin, i.data.quantity, a.Price, traderRecords);
-
+                                    s.updateCoinsData_AfterSelling(i.data.coin, i.data.quantity, coinRecords);
                                 });
                                 Thread thread = new Thread(sell_thread);
                                 thread.Start();
