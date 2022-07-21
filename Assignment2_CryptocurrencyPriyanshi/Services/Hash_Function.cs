@@ -24,10 +24,10 @@ namespace Assignment2_newAttempt.Services
             while (transactionHash.Length < 128)
             {
                 int index = Convert.ToInt32((rnd.NextSingle() * SALTCHARS.Length));
-               // transactionHash.Append(SALTCHARS.ElementAt(index));
+               
             }
             String hashCode = transactionHash.ToString();
-           //   return "0x" + hashCode.ToLower();
+           
         }
 
     }
