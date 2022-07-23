@@ -23,16 +23,8 @@ namespace JWTTokenHW8.Controllers
         private static readonly SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
 
        // public readonly UserDB userdb;
-       UserDB userdb = new UserDB();
-        List<User> user_list = userdb.users_data;
-
-        public AuthController(UserDB userDB)
-        {
-            this.userdb = userDB;
-        }
-
-
-
+       //UserDB userdb = new UserDB();
+        List<User> user_list = UserDB.data();
 
 
         public IConfiguration Configuration { get; }
@@ -42,7 +34,7 @@ namespace JWTTokenHW8.Controllers
             Configuration = configuration;
         }
        
-
+        // At this endpoint i am checking if the user exists or not
         [HttpPost("login")]
         public async Task<ActionResult<string>> Login(User request)
         {
@@ -65,15 +57,13 @@ namespace JWTTokenHW8.Controllers
 
        
 
-
+    // this generates token for my user and gives success if token gets generated. 
         private static string GenerateToken(string username, string password)
         {
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var secToken = new JwtSecurityToken(
                 signingCredentials: credentials,
-                //issuer: ISSUER,
-                //audience: AUDIENCE,
                 claims: new[]
                 {
                     new Claim(JwtRegisteredClaimNames.UniqueName, username),

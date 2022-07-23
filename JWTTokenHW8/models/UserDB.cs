@@ -2,9 +2,9 @@
 {
     public class UserDB
     {
-        public  List<User> users_data;
+        public static  List<User> users_data;
 
-        public UserDB()
+        public  static List<User> data()
         {
             users_data = new List<User>()
             {
@@ -15,6 +15,7 @@
             new User {username = "Kaustubh", password = "efgh"},
             new User {username= "Raghu" , password ="ijkl"}
             };
+            return users_data;
         }
 
 

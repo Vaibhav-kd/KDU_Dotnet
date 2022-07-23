@@ -9,7 +9,7 @@ namespace JWTTokenHW8
             // Add services to the container.
 
             builder.Services.AddControllers();
-            builder.Services.AddScoped<User>();
+            builder.Services.AddScoped<UserDB>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
