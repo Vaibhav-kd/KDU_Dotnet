@@ -8,6 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Principal;
 using System.Text;
 using Microsoft.Exchange.WebServices.Data;
+using JWTTokenHW8.Services;
 
 namespace JWTTokenHW8.Controllers
 {
@@ -15,65 +16,45 @@ namespace JWTTokenHW8.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly userServices us;
+        private string token;
 
-        //const string ISSUER = "issuing-website-url";
-        //const string AUDIENCE = "target-website-url";
-        const string key = "225e46a6fa5340b1a87b988e4e4326900c8bebf8668648579e91441d1158daf48eb60ad8d035492f8cc8846624eed68c2ee34e08db774af2bd94fb7b99f64ba7";
-
-        private static readonly SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
-
-       // public readonly UserDB userdb;
-       //UserDB userdb = new UserDB();
-        List<User> user_list = UserDB.data();
-
-
-        public IConfiguration Configuration { get; }
-
-        public AuthController(IConfiguration configuration)
+        public AuthController(userServices us)
         {
-            Configuration = configuration;
+            this.us = us;
         }
-       
-        // At this endpoint i am checking if the user exists or not
+
+        // At this endpoint i am checking if the user exists or not and if it does , generate a token for user . 
         [HttpPost("login")]
-        public async Task<ActionResult<string>> Login(User request)
+        public string Login(string username, string password)
         {
-            
-            var userNameCheck =  user_list.Where(x => x.username == request.username);
-            if (userNameCheck==null)
-            {
-                return BadRequest("User not Found");
-            }
+
+            var userNameCheck = us.users_data.Where(x => x.username == username);
+
+            if (userNameCheck == null)
+                return "USer not found!";
 
 
-            var userPasswordCheck =  user_list.Where(x => x.password == request.password);
+
+            var userPasswordCheck = us.users_data.Where(x => x.password == password);
+
             if (userPasswordCheck == null)
-            {
-                return BadRequest("Password is incorect");
-            }
-            string token = GenerateToken(request.username, request.password);
-            return Ok(token);
+
+                return "Password is incorect";
+
+            token = us.GenerateToken(username, password);
+            return token;
         }
 
-       
 
-    // this generates token for my user and gives success if token gets generated. 
-        private static string GenerateToken(string username, string password)
+        [HttpPost("ViewUser")]
+        public string View(string username)
         {
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-            var secToken = new JwtSecurityToken(
-                signingCredentials: credentials,
-                claims: new[]
-                {
-                    new Claim(JwtRegisteredClaimNames.UniqueName, username),
-                    new Claim(JwtRegisteredClaimNames.AtHash, password)
-                }
-            );
 
-            var handler = new JwtSecurityTokenHandler();
+            var a = us.users_data.Where(x => x.username == username).SingleOrDefault();
+            return a.percentage;
 
-            return handler.WriteToken(secToken);
         }
     }
 }

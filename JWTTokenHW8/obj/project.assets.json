@@ -6770,11 +6770,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KD Administrator\\source\\repos\\JWTTokenHW8\\JWTTokenHW8.csproj",
+      "projectUniqueName": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\JWTTokenHW8\\JWTTokenHW8.csproj",
       "projectName": "JWTTokenHW8",
-      "projectPath": "C:\\Users\\KD Administrator\\source\\repos\\JWTTokenHW8\\JWTTokenHW8.csproj",
+      "projectPath": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\JWTTokenHW8\\JWTTokenHW8.csproj",
       "packagesPath": "C:\\Users\\KD Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KD Administrator\\source\\repos\\JWTTokenHW8\\obj\\",
+      "outputPath": "C:\\Users\\KD Administrator\\Desktop\\KDUPRI\\JWTTokenHW8\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KD Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
